@@ -19,6 +19,7 @@ button.addEventListener("click", addArray)
 
 function addArray(){
     task = document.getElementById("input-task") 
+    arrayTask = JSON.parse(localStorage.getItem('arrayTask')) || []
     arrayTask.push(task.value)
     task.value = ""
     
@@ -30,7 +31,7 @@ function showLi(){
     ul.innerText = ""
     let id = -1
 
-    let arrayTask = JSON.parse(localStorage.getItem('arrayTask'))
+    arrayTask = JSON.parse(localStorage.getItem('arrayTask'))
     
     arrayTask.forEach((item) => {
         const li = document.createElement("li")
