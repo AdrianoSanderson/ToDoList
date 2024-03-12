@@ -70,9 +70,8 @@ ul{
 li{
     list-style: none;
     background-color: #ffffff;
-    color: black;
+    color: #010B13;
     width: 23rem;
-    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,6 +90,11 @@ li button{
     background-color: #ffffff;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.footer-content{
+    position: fixed;
+    bottom: 0;
 }
 
 @media screen and (max-width:512px){
